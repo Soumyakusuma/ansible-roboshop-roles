@@ -13,6 +13,4 @@
           state: restarted
           enabled: yes
 
-      - name: install dependencies
-        community.general.npm:
-          path: /app
+      
