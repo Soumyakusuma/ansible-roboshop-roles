@@ -1,1 +1,3 @@
 catalogue_host: catalogue.pract.site
+user_host: user.pract.site
+cart_host: cart.pract.site
