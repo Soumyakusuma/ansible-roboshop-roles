@@ -1,7 +1,3 @@
-- name: configuring mongodb 
-  hosts: mongodb
-  become: yes
-  tasks:
     - name: set up mongodb file
       ansible.builtin.copy:
         src: mongo.repo
@@ -28,6 +24,4 @@
       ansible.builtin.service:
         name: mongod
         state: restarted
-        
-
-    
+      
