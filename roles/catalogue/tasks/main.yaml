@@ -35,3 +35,4 @@
       - name: loading the products
         ansible.builtin.shell: mongosh --host mongodb.pract.site </app/db/master-data.js
         when: catalogue_output.stdout | int < 0
+        ignore_errors: true
